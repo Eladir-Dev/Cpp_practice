@@ -1,0 +1,46 @@
+## 🧮 Fundamental C++ Data Types
+
+| Type         | Description                                                                  | Typical Size | Value Range (Approximate)                     |
+|--------------|------------------------------------------------------------------------------|--------------|-----------------------------------------------|
+| `int`        | Integer type for whole numbers                                               | 4 bytes      | −2,147,483,648 to 2,147,483,647               |
+| `short`      | Smaller integer type                                                         | 2 bytes      | −32,768 to 32,767                             |
+| `long`       | Larger integer type                                                          | 4 or 8 bytes | Platform-dependent                            |
+| `long long`  | Extended integer type for very large numbers                                 | 8 bytes      | −9,223,372,036,854,775,808 to 9,223,372,036…  |
+| `unsigned`   | Integer without negative values (can be combined with `int`, `short`, etc.)  | Same as base | 0 to 2×max positive of signed type            |
+| `char`       | Stores a single character (ASCII or Unicode)                                 | 1 byte       | −128 to 127 or 0 to 255 (signed/unsigned)     |
+| `bool`       | Boolean type for true/false                                                  | 1 byte       | `true` or `false`                             |
+| `float`      | Single-precision floating-point number                                       | 4 bytes      | ~±3.4×10^38, 7 decimal digits precision       |
+| `double`     | Double-precision floating-point number                                       | 8 bytes      | ~±1.7×10^308, 15 decimal digits precision     |
+| `long double`| Extended precision floating-point number                                     | 8–16 bytes   | Platform-dependent                            |
+| `wchar_t`    | Wide character type (for Unicode/locale support)                             | 2 or 4 bytes | Platform-dependent                            |
+
+---
+
+## 🧩 Derived Data Types
+
+| Type             | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `pointer`        | Stores memory addresses (`int*`, `char*`, etc.)                             |
+| `array`          | Fixed-size collection of elements of the same type (`int arr[10]`)          |
+| `function`       | Represents a function (`int add(int a, int b)`)                             |
+| `reference`      | Alias to another variable (`int& ref = x`)                                  |
+
+---
+
+## 🏗️ User-Defined Data Types
+
+| Type         | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| `struct`     | Groups variables under one name (`struct Point { int x, y; };`)             |
+| `class`      | Defines objects with encapsulation and methods (`class Car { ... };`)       |
+| `union`      | Stores different data types in the same memory location                     |
+| `enum`       | Defines named integer constants (`enum Color { Red, Green, Blue };`)        |
+| `typedef` / `using` | Creates type aliases (`typedef int Score;` or `using Score = int;`)  |
+
+---
+
+## 🧠 Notes for Advanced Use
+
+- Use `sizeof(type)` to check actual size on your platform.
+- `auto` lets the compiler deduce the type automatically.
+- C++ also supports fixed-width types via `<cstdint>` like `int32_t`, `uint64_t`, etc.
