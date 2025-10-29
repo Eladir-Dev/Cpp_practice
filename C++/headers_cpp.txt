@@ -1,0 +1,149 @@
+=====Headers Estándar de C++ con Descripciones=====
+
+Incluye headers estándar de la biblioteca de C++ (basados en C++17+), agrupados por categorías.
+
+Nota: Este documento se creo con BlackBox AI
+
+===Headers para Entrada/Salida y Flujos===
+#include <iostream>
+Descripción: Proporciona clases para entrada y salida estándar, como cin, cout, cerr. Esencial para programas interactivos.
+
+#include <fstream>
+Descripción: Maneja archivos de entrada y salida, con clases como ifstream, ofstream y fstream para leer/escribir archivos.
+
+#include <sstream>
+Descripción: Permite manipular cadenas como flujos, usando stringstream para convertir entre tipos y cadenas.
+
+===Headers para Contenedores y Algoritmos===
+#include <vector>
+Descripción: Implementa arreglos dinámicos con la clase vector, ideal para listas de elementos que cambian de tamaño.
+
+#include <array>
+Descripción: Proporciona arreglos de tamaño fijo con la clase array, más eficiente que los punteros crudos.
+
+#include <deque>
+Descripción: Implementa colas dobles con deque, permitiendo inserciones eficientes en ambos extremos.
+
+#include <list>
+Descripción: Lista enlazada doble con la clase list, útil para inserciones/eliminaciones frecuentes en medio de la secuencia.
+
+#include <set>
+Descripción: Conjuntos ordenados con set y multiset, para almacenar elementos únicos o múltiples sin duplicados.
+
+#include <map>
+Descripción: Mapas asociativos con map y multimap, para pares clave-valor ordenados.
+
+#include <unordered_set>
+Descripción: Conjuntos no ordenados con unordered_set, más rápidos para búsquedas pero sin orden garantizado.
+
+#include <unordered_map>
+Descripción: Mapas no ordenados con unordered_map, ideales para búsquedas rápidas por clave.
+
+#include <stack>
+Descripción: Pila LIFO con stack, para operaciones de último en entrar, primero en salir.
+
+#include <queue>
+Descripción: Cola FIFO con queue, y priority_queue para colas con prioridades.
+
+#include <algorithm>
+Descripción: Contiene algoritmos genéricos como sort, find, transform, para manipular contenedores.
+
+#include <numeric>
+Descripción: Algoritmos numéricos como accumulate, inner_product, para operaciones matemáticas en rangos.
+
+===Headers para Cadenas y Texto===
+#include <string>
+Descripción: Manejo de cadenas con la clase string, incluyendo operaciones como concatenación y búsqueda.
+
+#include <regex>
+Descripción: Soporte para expresiones regulares con regex, para búsqueda y manipulación de patrones en texto.
+
+===Headers para Utilidades y Memoria===
+#include <memory>
+Descripción: Gestión de memoria inteligente con unique_ptr, shared_ptr, weak_ptr, para evitar fugas de memoria.
+
+#include <utility>
+Descripción: Utilidades como pair, tuple, move, swap, para pares de valores y semántica de movimiento.
+
+#include <functional>
+Descripción: Objetos de función como function, bind, lambdas, para callbacks y funciones genéricas.
+
+#include <chrono>
+Descripción: Manejo de tiempo y fechas con chrono, para medir duraciones y puntos en el tiempo.
+
+#include <random>
+Descripción: Generación de números aleatorios con random_device, mt19937, distribuciones uniformes, etc.
+
+#include <exception>
+Descripción: Manejo de excepciones con exception, runtime_error, para errores en tiempo de ejecución.
+
+#include <typeinfo>
+Descripción: Información de tipos en tiempo de ejecución con typeid y type_info.
+
+===Headers para Matemáticas y Números===
+#include <cmath>
+Descripción: Funciones matemáticas como sin, cos, sqrt, pow, para cálculos numéricos.
+
+#include <complex>
+Descripción: Números complejos con complex, para matemáticas avanzadas.
+
+#include <valarray>
+Descripción: Arreglos numéricos con valarray, optimizados para operaciones vectoriales.
+
+#include <ratio>
+Descripción: Razones y unidades con ratio, para metaprogramación de tipos numéricos.
+
+#include <limits>
+Descripción: Límites de tipos numéricos con numeric_limits, para valores máximo/mínimo.
+
+===Headers para Concurrencia y Hilos===
+#include <thread>
+Descripción: Soporte para hilos con thread, para ejecución paralela.
+
+#include <mutex>
+Descripción: Sincronización con mutex, lock_guard, para proteger recursos compartidos.
+
+#include <condition_variable>
+Descripción: Variables de condición con condition_variable, para comunicación entre hilos.
+
+#include <future>
+Descripción: Valores futuros con future, promise, async, para resultados asíncronos.
+
+#include <atomic>
+Descripción: Operaciones atómicas con atomic, para variables compartidas sin bloqueos.
+
+===Headers para Localización e Internacionalización===
+#include <locale>
+Descripción: Configuración regional con locale, para formato de números, fechas y texto según cultura.
+
+#include <codecvt>
+Descripción: Conversión de codificaciones con codecvt, para UTF-8, UTF-16, etc. (obsoleto en C++17, usa <charconv>).
+
+#include <charconv>
+Descripción: Conversión de caracteres a números con to_chars, from_chars, eficiente y seguro.
+
+===Headers Heredados de C (con prefijo c)===
+#include <cstdio>
+Descripción: Funciones de E/S como printf, scanf (equivalente a <stdio.h>).
+
+#include <cstdlib>
+Descripción: Utilidades generales como malloc, exit (equivalente a <stdlib.h>).
+
+#include <cstring>
+Descripción: Manipulación de cadenas como strcpy, strlen (equivalente a <string.h>).
+
+#include <ctime>
+Descripción: Funciones de tiempo como time, clock (equivalente a <time.h>).
+
+#include <cassert>
+Descripción: Asertos con assert, para depuración (equivalente a <assert.h>).
+
+===Headers para Metaprogramación y Tipos===
+#include <type_traits>
+Descripción: Características de tipos con is_integral, enable_if, para introspección y SFINAE.
+
+#include <bitset>
+Descripción: Manipulación de bits con bitset, para operaciones a nivel de bit.
+
+#include <initializer_list>
+Descripción: Listas de inicialización con initializer_list, para constructores uniformes.
